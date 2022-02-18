@@ -1,0 +1,173 @@
+/* Fonts imported */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;800&family=Roboto:wght@300;400;900&display=swap');
+
+/* Basic style for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+body {
+    background-color: #163246;
+    color: whitesmoke;
+}
+
+/* Titles and subtitles */
+h1 {
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Containers */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Alignment classes */
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Buttons */
+.btn {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #163246;
+    background: rgb(32, 80, 114);
+    background: linear-gradient(147deg, rgba(50, 157, 156, 1) 36%, rgba(86, 197, 150, 1) 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#leaderboard-btn {
+    background: rgb(22, 50, 70);
+    background: linear-gradient(147deg, rgba(250, 137, 123, 1) 0%, rgba(255, 221, 148, 1) 100%);
+}
+
+#leaderboard-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 137, 123, 0.6);
+}
+
+/* Game page specific */
+
+/* Answers containers */
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgba(50, 157, 156, 1);
+    font-size: 2rem;
+    max-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+    color: whitesmoke;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(147deg,rgba(11,223,36,1) 0%, rgba(41,232,111,1) 100%);
+}
+
+.incorrect {
+    background: linear-gradient(147deg,rgba(230,29,29,1) 0%, rgba(224,11,11,1) 100%);
+}
+
+/* Heads up Display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 15rem;
+    height: 2rem;
+    border: 0.1rem solid rgba(50, 157, 156, 1);
+    margin-top: 1.5rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgba(50, 157, 156, 1);
+    width: 0%;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 30rem;
+    }
+}
