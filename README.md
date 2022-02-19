@@ -80,7 +80,13 @@ Image
 
 CSS Transform properties - [Youtube](https://www.youtube.com/watch?v=rzD-cPhq02E)
 
+CSS Animations - [Youtube](https://www.youtube.com/watch?v=YszONjKpgg4)
 
+Traversing the DOM - [Youtube](https://www.youtube.com/watch?v=v7rSSy8CaYE)
+
+Array.from function - [Youtube](https://www.youtube.com/watch?v=NPbDqbwtr-4)
+
+Arrow functions - [Youtube](https://www.youtube.com/watch?v=h33Srr5J9nY)
 &nbsp;  
 
 

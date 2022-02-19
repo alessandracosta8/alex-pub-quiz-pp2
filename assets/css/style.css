@@ -1,41 +1,65 @@
 /* Fonts imported */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;800&family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
 
 /* Basic style for all elements */
+:root {
+    background-color: #163246;
+    font-size: 62.5%; /* Set the default font size to 10px to help calculate rem values */
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto Serif', sans-serif;
-}
-
-body {
-    background-color: #163246;
     color: whitesmoke;
 }
 
 /* Titles and subtitles */
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: whitesmoke;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+}
+
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 400;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 800;
 }
 
-/* Containers */
+h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+/* Containers and alignment */
 .container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 60rem;
+    max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.container > * {
+    width: 100%;
 }
 
 .flex-column {
@@ -65,9 +89,11 @@ h2 {
 .btn {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
-    padding: 2rem 0;
-    width: 25rem;
+    font-weight: 700;
+    padding: 1rem 0;
+    width: 30rem;
     text-align: center;
+    border: 0.1rem solid rgba(50, 157, 156, 1);
     margin-bottom: 1rem;
     text-decoration: none;
     color: #163246;
@@ -91,6 +117,7 @@ h2 {
 
 #leaderboard-btn {
     background: rgb(22, 50, 70);
+    border: 0.1rem solid rgba(250, 137, 123, 1);
     background: linear-gradient(147deg, rgba(250, 137, 123, 1) 0%, rgba(255, 221, 148, 1) 100%);
 }
 
@@ -103,11 +130,11 @@ h2 {
 /* Answers containers */
 .choice-container {
     display: flex;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     border-radius: 4px;
     background: rgba(50, 157, 156, 1);
-    font-size: 2rem;
+    font-size: 1.8rem;
     max-width: 80rem;
 }
 
@@ -119,12 +146,12 @@ h2 {
 }
 
 .choice-prefix {
-    padding: 2rem 2.5rem;
+    padding: 2.5rem;
     color: whitesmoke;
 }
 
 .choice-text {
-    padding: 2rem;
+    padding: 2.5rem;
     width: 100%;
 }
 
