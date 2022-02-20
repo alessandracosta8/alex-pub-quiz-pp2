@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Heading and links -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's Cinema Quiz - Congrats!</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Responsive container -->
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
+            <h1 id="finalScore">0</h1>
+            <!-- Form to save user score -->
+            <form action="">
+                <input type="text" name="username" id="username" placeholder="Insert username">
+                <!-- Submit button disabled by default until username is typed in -->
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <!-- Buttons to proceed -->
+            <a class="btn" href="/game.html">Play Again</a>
+            <a class="btn" href="/">Go Home</a>
+        </div>
+    </div>
+    <script src="/assets/js/end.js"></script>
+</body>
+
+</html>

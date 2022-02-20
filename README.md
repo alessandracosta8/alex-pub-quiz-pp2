@@ -16,8 +16,9 @@ Image
         - [Fonts](#fonts)
         - [Images](#images)
 - [Features](#features)
-    - [Navigation](#navigation)
     - [Home page](#home-page)
+    - [Game page](#game-page)
+    - [End page](#end-page)
 - [Technologies used](#tecnologies-used)
 - [Testing and Validation](#testing-and-validation)
     - [HTML and CSS](#html-and-css)
@@ -49,8 +50,26 @@ Image
 
 ## Features
 ---
-### Navigation
 ### Home Page
+Welcome message
+Easy selection to start game or view score leaderboard
+
+### Game Page
+Showing the user the Head's up display with amount of question needed to complete the game, progress bar to give feedback on current completion of the game and total score. This all update dynamically.
+
+User can hover and have an indication of witch answer is about to select with css animation.
+
+Immediate feedback with color style, on click of the mouse if answer is correct or not and automatically displaing the next question of the quiz.
+
+At completion of amount of questions requested user gets automatically directed to end page to save score and access to leaderboard.
+
+If the user wants to play the game again, there is a larger set of question available then just the 5 requested to win, to keep the game interesting and replayable.
+
+### End Page
+Showing total score
+Letting user save their username and score
+Buttons only work if user first types in a username
+
 &nbsp; 
 
 ## Technologies used
