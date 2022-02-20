@@ -87,7 +87,7 @@ Traversing the DOM - [Youtube](https://www.youtube.com/watch?v=v7rSSy8CaYE)
 Array.from function - [Youtube](https://www.youtube.com/watch?v=NPbDqbwtr-4)
 
 Arrow functions - [Youtube](https://www.youtube.com/watch?v=h33Srr5J9nY)
-&nbsp;  
 
+Spread Operator [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [Youtube](https://www.youtube.com/watch?v=iLx4ma8ZqvQ)
 
-
+&nbsp;
