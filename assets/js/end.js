@@ -4,6 +4,8 @@ const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
+
+
 // Display the final score of the game in the end page
 finalScore.innerText = mostRecentScore;
 

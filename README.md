@@ -115,4 +115,6 @@ Spread Operator [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Java
 
 Callback functions - [YouTube](https://www.youtube.com/watch?v=670f71LTWpM)
 
+JSON - [YouTube](https://www.youtube.com/watch?v=iiADhChRriM)
+
 &nbsp;
