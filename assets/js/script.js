@@ -1,8 +1,9 @@
 // Selection of elements from game.html
 const question = document.querySelector('#question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-const questionCounterText = document.getElementById('questionCounter');
+const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('progressBarFull');
 
 // List of questions for the quiz
 let questions = [{
@@ -176,7 +177,7 @@ startGame = () => {
 
 /* Show a new question on the page and update HUD
 -> If game ran out of questions, or reached max, goes to end page
--> Add to question counter and update innerText
+-> Add to question counter and update progress bar
 -> Generate a random number to select one of the available questions in the array, .lenght to use all the available ones in the array
 -> Gets rid of already used question
 -> Making sure questions and answers load before letting user select a question */
@@ -186,7 +187,8 @@ getNewQuestion = () => {
     }
 
     questionCounter++;
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
