@@ -1,6 +1,8 @@
 // Selection of elements from game.html
-const question = document.querySelector("#question");
+const question = document.querySelector('#question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
+const questionCounterText = document.getElementById('questionCounter');
+const scoreText = document.getElementById('score');
 
 // List of questions for the quiz
 let questions = [{
@@ -163,22 +165,29 @@ const MAX_QUESTIONS = 5;
 
 // Game functions
 
-// Initiate game function
+/* Initiate game function
+-> Use of spread operator so any change to availableQuestion variable will not change the question variable */
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions]; // use of spread operator so any change to availableQuestion variable will not change the question variable
+    availableQuestions = [...questions];
     getNewQuestion();
 }
 
+/* Show a new question on the page and update HUD
+-> If game ran out of questions, or reached max, goes to end page
+-> Add to question counter and update innerText
+-> Generate a random number to select one of the available questions in the array, .lenght to use all the available ones in the array
+-> Gets rid of already used question
+-> Making sure questions and answers load before letting user select a question */
 getNewQuestion = () => {
-    // If game ran out of questions, or reached max, goes to end page
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         return window.location.assign("/end.html");
     }
 
     questionCounter++;
-    // Generate a random number to select one of the available questions in the array, .lenght to use all the available ones in the array
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -188,25 +197,42 @@ getNewQuestion = () => {
         choice.innerText = currentQuestion["choice" + number];
     })
 
-    // Gets rid of already used question
     availableQuestions.splice(questionIndex, 1);
 
-    // Making sure questions and answers load before letting user select a question
     acceptingAnswers = true;
 }
 
-// Listen to user click on choice
+/* Listen to user click on choice and give color feedback
+-> Don't do anything on click event if game is not ready to accept answers
+-> Change choice cointainer color to display if answer is correct or not
+-> Check to increment score
+-> show color for feedback, delay and then return to normal after 1 second (1000ms) -> show class, delay and remove class */
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        // Don't do anything on click event if game is not ready to accept answers
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        console.log(selectedAnswer);
-        getNewQuestion();
+
+        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        if (classToApply === 'correct') {
+            incrementScore(CORRECT_BONUS);
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply);
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
     })
 });
+
+// Increment score 
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+}
 
 startGame();

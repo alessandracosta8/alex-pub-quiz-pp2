@@ -164,7 +164,7 @@ h3 {
     background: linear-gradient(147deg, rgba(230, 29, 29, 1) 0%, rgba(224, 11, 11, 1) 100%);
 }
 
-/* Heads up Display */
+/* Head's up Display = Informations about your game at the top */
 #hud {
     display: flex;
     justify-content: space-between;
@@ -172,7 +172,7 @@ h3 {
 
 .hud-prefix {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hud-main-text {
