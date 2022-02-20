@@ -90,4 +90,6 @@ Arrow functions - [Youtube](https://www.youtube.com/watch?v=h33Srr5J9nY)
 
 Spread Operator [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [Youtube](https://www.youtube.com/watch?v=iLx4ma8ZqvQ)
 
+.forEach Array method - [YouTube](https://www.youtube.com/watch?v=SXb5LN_opbA)
+
 &nbsp;

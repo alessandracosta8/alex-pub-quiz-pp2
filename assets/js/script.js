@@ -152,7 +152,7 @@ let questions = [{
 
 // Variables for the game functions
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
@@ -172,11 +172,41 @@ startGame = () => {
 }
 
 getNewQuestion = () => {
+    // If game ran out of questions, or reached max, goes to end page
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        return window.location.assign("/end.html");
+    }
+
     questionCounter++;
     // Generate a random number to select one of the available questions in the array, .lenght to use all the available ones in the array
-    const questionIndex = Math.floor(Math.random() * availableQuestions.lenght);
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
+
+    choices.forEach(choice => {
+        const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["choice" + number];
+    })
+
+    // Gets rid of already used question
+    availableQuestions.splice(questionIndex, 1);
+
+    // Making sure questions and answers load before letting user select a question
+    acceptingAnswers = true;
 }
+
+// Listen to user click on choice
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        // Don't do anything on click event if game is not ready to accept answers
+        if (!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+        console.log(selectedAnswer);
+        getNewQuestion();
+    })
+});
 
 startGame();
