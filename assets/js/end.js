@@ -6,7 +6,9 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 // Get what is in localstorage OR return an empty array
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-console.log(highScores);
+
+// Maximum number of scores displayed
+const MAX_HIGH_SCORES = 5;
 
 // Display the final score of the game in the end page
 finalScore.innerText = mostRecentScore;
@@ -18,15 +20,23 @@ username.addEventListener('keyup', () => {
 
 /* Function to save the score 
 -> prevent the for to default to refresh 
--> Object that has contains the most recent score and the username input from the user */
+-> Object that has contains the most recent score and the username input from the user
+-> Sorting the scores 
+-> Only display the MAX_HIGH_SCORES number
+-> Update localStorage, use stringify so it can be saved as JSON
+-> Go back to the Home page */
 saveHighScore = e => {
     console.log('Savedgit ');
     e.preventDefault();
 
     const score = {
-        score: mostRecentScore,
+        score: Math.floor(Math.random() * 100),
         name: username.value
     };
-    console.log(score);
 
+    highScores.push(score);
+    highScores.sort( (a,b) => b.score - a.score);
+    highScores.splice(5);
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+    window.location.assign("/");
 }
