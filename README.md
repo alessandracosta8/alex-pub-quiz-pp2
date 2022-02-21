@@ -80,6 +80,8 @@ The local storage is not secured and will rely on the honesty of the user playin
 
 ## Technologies used
 ---
+
+[Open Trivia Database](https://opentdb.com/) for the questions of the quiz.
 &nbsp;  
 
 ## Testing and Validation
@@ -120,5 +122,7 @@ Spread Operator [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Java
 Callback functions - [YouTube](https://www.youtube.com/watch?v=670f71LTWpM)
 
 JSON - [YouTube](https://www.youtube.com/watch?v=iiADhChRriM)
+
+Fetch API - [YouTube](https://www.youtube.com/watch?v=cuEtnrL9-H0)
 
 &nbsp;
