@@ -115,6 +115,15 @@ h3 {
     transform: none;
 }
 
+#leaderboard-btn {
+    background: rgb(22, 50, 70);
+    border: 0.1rem solid rgba(250, 137, 123, 1);
+    background: linear-gradient(147deg, rgba(250, 137, 123, 1) 0%, rgba(255, 221, 148, 1) 100%);
+}
+
+#leaderboard-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 137, 123, 0.6);
+}
 
 /* Game page specific */
 
@@ -214,12 +223,19 @@ input::placeholder {
     text-align: center;
 }
 
-#leaderboard-btn {
-    background: rgb(22, 50, 70);
-    border: 0.1rem solid rgba(250, 137, 123, 1);
-    background: linear-gradient(147deg, rgba(250, 137, 123, 1) 0%, rgba(255, 221, 148, 1) 100%);
+/* Leaderboard page specific */
+
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
 }
 
-#leaderboard-btn:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 137, 123, 0.6);
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: scale(1.025);
 }

@@ -19,6 +19,7 @@ Image
     - [Home page](#home-page)
     - [Game page](#game-page)
     - [End page](#end-page)
+    - [Leaderboard page](#leaderboard-page)
 - [Technologies used](#tecnologies-used)
 - [Testing and Validation](#testing-and-validation)
     - [HTML and CSS](#html-and-css)
@@ -71,6 +72,9 @@ Letting user save their username and score
 Buttons only work if user first types in a username
 End page shows the final score obtained in the game page once the actual game is finished, saving it in local storage, paired with the username chosen by the user.
 
+### Leaderboard Page
+Takes the scores saved in the local storage of the brownser and shows the Leaderboard with the scores saved and sorted before in the End page and directs the user back to the Home page.
+The local storage is not secured and will rely on the honesty of the user playing the game.
 
 &nbsp; 
 
