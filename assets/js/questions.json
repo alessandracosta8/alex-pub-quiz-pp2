@@ -34,7 +34,7 @@
     {
         "question": "This movie contains the quote, &quot;Nobody puts Baby in a corner.&quot;",
         "choice1": "Three Men and a Baby",
-        "choice2": "Ferris Bueller&#039;s Day Off",
+        "choice2": "Ferris Bueller's Day Off",
         "choice3": "Pretty in Pink",
         "choice4": "Dirty Dancing",
         "answer": 4

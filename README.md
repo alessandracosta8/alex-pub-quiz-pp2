@@ -56,6 +56,8 @@ Welcome message
 Easy selection to start game or view score leaderboard
 
 ### Game Page
+Showing Spinning loader to allow content of question and answer to load without showing only the empty page.
+
 Showing the user the Head's up display with amount of question needed to complete the game, progress bar to give feedback on current completion of the game and total score. This all update dynamically.
 
 User can hover and have an indication of witch answer is about to select with css animation.
@@ -124,5 +126,9 @@ Callback functions - [YouTube](https://www.youtube.com/watch?v=670f71LTWpM)
 JSON - [YouTube](https://www.youtube.com/watch?v=iiADhChRriM)
 
 Fetch API - [YouTube](https://www.youtube.com/watch?v=cuEtnrL9-H0)
+
+Promises - [YouTube](https://www.youtube.com/watch?v=DHvZLI7Db8E)
+
+Build a loader W3 Schools - [Link](https://www.w3schools.com/howto/howto_css_loader.asp)
 
 &nbsp;

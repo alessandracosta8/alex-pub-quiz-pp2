@@ -4,9 +4,12 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
+const loader = document.getElementById('loader');
+const game = document.getElementById('game');
 
 /* List of questions for the quiz from Open Trivia DB 
--> Load questions */
+-> Load questions from JSON in correct positions
+-> Hide the loader and begin the game*/
 let questions = [];
 fetch(
     'https://opentdb.com/api.php?amount=50&category=11&difficulty=easy&type=multiple'
@@ -60,6 +63,8 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
+    game.classList.remove("hidden");
+    loader.classList.add("hidden");
 }
 
 /* Show a new question on the page and update HUD
