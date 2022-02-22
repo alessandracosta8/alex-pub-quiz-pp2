@@ -11,32 +11,12 @@ const game = document.getElementById('game');
 -> Load questions from JSON in correct positions
 -> Hide the loader and begin the game*/
 let questions = [];
-fetch(
-    'https://opentdb.com/api.php?amount=50&category=11&difficulty=easy&type=multiple'
-)
+fetch('/assets/js/questions.json')
     .then((res) => {
         return res.json();
     })
     .then((loadedQuestions) => {
-        questions = loadedQuestions.results.map((loadedQuestion) => {
-            const formattedQuestion = {
-                question: loadedQuestion.question,
-            };
-
-            const answerChoices = [...loadedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-            answerChoices.splice(
-                formattedQuestion.answer - 1,
-                0,
-                loadedQuestion.correct_answer
-            );
-
-            answerChoices.forEach((choice, index) => {
-                formattedQuestion['choice' + (index + 1)] = choice;
-            });
-
-            return formattedQuestion;
-        });
+        questions = loadedQuestions;
         startGame();
     })
     .catch((err) => {
