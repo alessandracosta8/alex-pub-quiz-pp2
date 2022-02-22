@@ -1,6 +1,6 @@
 [
     {
-        "question": "Which of the following was not one of &quot;The Magnificent Seven&quot;?",
+        "question": "Which of the following was not one of \"The Magnificent Seven\"?",
         "choice1": "Steve McQueen",
         "choice2": "Clint Eastwood",
         "choice3": "Charles Bronson",
@@ -16,7 +16,7 @@
         "answer": 4
     }, 
     {
-        "question": "Who directed the movies &quot;Pulp Fiction&quot;, &quot;Reservoir Dogs&quot; and &quot;Django Unchained&quot;?",
+        "question": "Who directed the movies \"Pulp Fiction\";, \"Reservoir Dogs\" and \"Django Unchained\"?",
         "choice1": "Martin Scorcese",
         "choice2": "Steven Spielberg",
         "choice3": "Quentin Tarantino",
@@ -24,7 +24,7 @@
         "answer": 3
     }, 
     {
-        "question": "The Queen song `A Kind Of Magic` is featured in which 1986 film?",
+        "question": "The Queen song \"A Kind Of Magic\" is featured in which 1986 film?",
         "choice1": "Flash Gordon",
         "choice2": "Highlander",
         "choice3": "Labyrinth",
@@ -32,7 +32,7 @@
         "answer": 2
     }, 
     {
-        "question": "This movie contains the quote, &quot;Nobody puts Baby in a corner.&quot;",
+        "question": "This movie contains the quote, \"Nobody puts Baby in a corner.\"",
         "choice1": "Three Men and a Baby",
         "choice2": "Ferris Bueller's Day Off",
         "choice3": "Pretty in Pink",
@@ -49,7 +49,7 @@
     }, 
     {
         "question": "Who is the main protagonist in, the 1985 film, Back to the Future?",
-        "choice1": "Emmett &quot;Doc&quot; Brown",
+        "choice1": "Emmett \"Doc\" Brown",
         "choice2": "Biff Tannen",
         "choice3": "Marty McFly",
         "choice4": "George McFly",
@@ -72,7 +72,7 @@
         "answer": 1
     }, 
     {
-        "question": "When does &quot;Rogue One: A Star Wars Story&quot; take place chronologically in the series?",
+        "question": "When does \"Rogue One: A Star Wars Story\" take place chronologically in the series?",
         "choice1": "Between Episode 3 and 4",
         "choice2": "After Episode 6",
         "choice3": "Before Episode 1",
@@ -80,7 +80,7 @@
         "answer": 1
     }, 
     {
-        "question": "In the 1992 film &quot;Army of Darkness&quot;, what name does Ash give to his double-barreled shotgun?",
+        "question": "In the 1992 film \"Army of Darkness\", what name does Ash give to his double-barreled shotgun?",
         "choice1": "Bloomstick",
         "choice2": "Boomstick",
         "choice3": "Blastbranch",
@@ -96,7 +96,7 @@
         "answer": 3
     }, 
     {
-        "question": "In the movie &quot;Blade Runner&quot;, what is the term used for human-like androids?",
+        "question": "In the movie \"Blade Runner\", what is the term used for human-like androids?",
         "choice1": "Cylons",
         "choice2": "Synthetics",
         "choice3": "Skinjobs",
@@ -104,7 +104,7 @@
         "answer": 4
     }, 
     {
-        "question": "In the 1995 film &quot;Balto&quot;, who are Steele&#039;s accomplices?",
+        "question": "In the 1995 film \"Balto\", who are Steele's accomplices?",
         "choice1": "Dusty, Kirby, and Ralph",
         "choice2": "Nuk, Yak, and Sumac",
         "choice3": "Kaltag, Nikki, and Star",
@@ -112,7 +112,7 @@
         "answer": 3
     }, 
     {
-        "question": "What is the name of the island that &quot;Jurassic Park&quot; is built on?",
+        "question": "What is the name of the island that \"Jurassic Park\" is built on?",
         "choice1": "Isla Nublar",
         "choice2": "Isla Sorna",
         "choice3": "Isla Muerta",
@@ -136,7 +136,7 @@
         "answer": 1
     }, 
     {
-        "question": "In which film does Humphrey Bogart say the famous line, &quot;Here&#039;s looking at you, kid&quot;?",
+        "question": "In which film does Humphrey Bogart say the famous line, \"Here's looking at you, kid\"?",
         "choice1": "Casablanca",
         "choice2": "The Maltese Falcon",
         "choice3": "The Treasure of the Sierra Madre",
@@ -144,7 +144,7 @@
         "answer": 1
     }, 
     {
-        "question": "In &quot;ALF&quot;, what was ALF&#039;s real name?",
+        "question": "In \"ALF\", what was ALF's real name?",
         "choice1": "Gordon Milipp",
         "choice2": "Gordon Foster",
         "choice3": "Gordon Shumway",
@@ -152,7 +152,7 @@
         "answer": 3
     }, 
     {
-        "question": "The 1996 film &#039;Fargo&#039; is primarily set in which US state?",
+        "question": "The 1996 film \"Fargo\" is primarily set in which US state?",
         "choice1": "North Dakota",
         "choice2": "South Dakota",
         "choice3": "Minnesota",
