@@ -43,6 +43,13 @@ fetch(
         console.error(err);
     });
 
+// Decode the HTML questions from Open Trivia DB to display correct text without HTML special entities
+var decodeHTML = function (html) {
+	var txt = document.createElement('textarea');
+	txt.innerHTML = html;
+	return txt.value;
+};
+
 // Variables for the game functions
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -85,7 +92,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question.raw();
+    question.innerText = decodeHTML(currentQuestion.question);
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
