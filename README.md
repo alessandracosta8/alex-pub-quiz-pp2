@@ -137,4 +137,6 @@ Build a loader W3 Schools - [Link](https://www.w3schools.com/howto/howto_css_loa
 Build a quiz app with JavaScript tutorial - [YouTube playlist](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
 
 
+Decoding HTML entities with vanilla JavaScript - [Link](https://gomakethings.com/decoding-html-entities-with-vanilla-javascript/)
+
 &nbsp;
