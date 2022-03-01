@@ -131,4 +131,7 @@ Promises - [YouTube](https://www.youtube.com/watch?v=DHvZLI7Db8E)
 
 Build a loader W3 Schools - [Link](https://www.w3schools.com/howto/howto_css_loader.asp)
 
+Build a quiz app with JavaScript tutorial - [YouTube playlist](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
+
+
 &nbsp;
