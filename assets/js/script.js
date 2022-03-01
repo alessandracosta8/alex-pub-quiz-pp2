@@ -11,7 +11,7 @@ const game = document.getElementById('game');
 -> Load questions from JSON in correct positions
 -> Hide the loader and begin the game*/
 let questions = [];
-fetch('assets/js/questions.json')
+fetch("/assets/js/questions.json")
     .then((res) => {
         return res.json();
     })

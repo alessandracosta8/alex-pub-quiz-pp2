@@ -96,6 +96,9 @@ The local storage is not secured and will rely on the honesty of the user playin
 #### New visitor
 #### Returning visitor
 ### Bugs
+Links from index.html files not recognised when deployed to GitHub. I had to remove the / for the root folder for the pages to link correctly in-between themselves.
+
+
 #### From the Slack feedback request
 ### Unfixed Bugs
 &nbsp;
