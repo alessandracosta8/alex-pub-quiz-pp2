@@ -85,7 +85,7 @@ getNewQuestion = () => {
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
+    question.innerText = `<span>${currentQuestion.question}</span>`;
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
