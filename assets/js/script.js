@@ -96,8 +96,7 @@ getNewQuestion = () => {
 
     choices.forEach(choice => {
         const number = choice.dataset["number"];
-        choice.innerText = currentQuestion["choice" + number];
-        decodeHTML(choice.value);
+        choice.innerText = decodeHTML(currentQuestion["choice" + number]);
     })
 
     availableQuestions.splice(questionIndex, 1);
