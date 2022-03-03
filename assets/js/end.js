@@ -13,9 +13,9 @@ const MAX_HIGH_SCORES = 5;
 // Display the final score of the game in the end page
 finalScore.innerText = mostRecentScore;
 
-// Enable save button only if username is typed in
+// Enable save button only if username is typed in or it has any whitespace
 username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value;
+    saveScoreBtn.disabled = !username.value || username.value.indexOf(' ') >= 0;
 })
 
 /* Function to save the score 
