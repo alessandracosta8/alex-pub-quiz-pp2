@@ -102,27 +102,29 @@ h3 {
     border-radius: 4px;
 }
 
-.btn:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
-    transition: transform 150ms;
-    transform: scale(1.03);
-}
-
-.btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
-
 #leaderboard-btn {
     background: rgb(22, 50, 70);
     border: 0.1rem solid rgba(250, 137, 123, 1);
     background: linear-gradient(147deg, rgba(250, 137, 123, 1) 0%, rgba(255, 221, 148, 1) 100%);
 }
 
-#leaderboard-btn:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 137, 123, 0.6);
+@media (hover: hover) {
+    .btn:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
+        transition: transform 150ms;
+        transform: scale(1.03);
+    }
+
+    .btn[disabled]:hover {
+        cursor: not-allowed;
+        box-shadow: none;
+        transform: none;
+    }
+
+    #leaderboard-btn:hover {
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 137, 123, 0.6);
+    }
 }
 
 /* Game page specific */
@@ -138,11 +140,13 @@ h3 {
     max-width: 80rem;
 }
 
-.choice-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
-    transform: scale(1.02);
-    transform: transform 100ms;
+@media (hover: hover) {
+    .choice-container:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 157, 156, 0.6);
+        transform: scale(1.02);
+        transform: transform 100ms;
+    }
 }
 
 .choice-prefix {
@@ -213,6 +217,7 @@ h3 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -254,6 +259,8 @@ input::placeholder {
     margin-bottom: 0.5rem;
 }
 
-.high-score:hover {
-    transform: scale(1.025);
+@media (hover: hover) {
+    .high-score:hover {
+        transform: scale(1.025);
+    }
 }
