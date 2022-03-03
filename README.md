@@ -70,8 +70,8 @@ If the user wants to play the game again, there is a larger set of question avai
 
 ### End Page
 Showing total score
-Letting user save their username and score
-Buttons only work if user first types in a username
+Letting user save their username and score.
+Buttons only work if user first types in a valid username and not just a whitespace.
 End page shows the final score obtained in the game page once the actual game is finished, saving it in local storage, paired with the username chosen by the user.
 
 ### Leaderboard Page
