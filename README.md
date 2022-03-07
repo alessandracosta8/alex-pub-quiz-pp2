@@ -1,6 +1,6 @@
 # Alex's Pub Quiz project
 
-Image
+![Home page](assets/images/home-page.png)
 
 &nbsp;  
 
@@ -41,8 +41,20 @@ Image
 ## UX
 ---
 ### Website owners goals
+Alex's Cinema Quiz it's a quick quiz to test your cinema knowledge and compete with friends. 
+&nbsp;
+
 ### Users goals
+This project is for educational purposes only. My goal is to build responsive website using JavScript.
+&nbsp;
+
 ### Wireframes
+![Home Page](assets/images/Home-page-wireframe.png)
+![Questions Page](assets/images/Questions-page-wireframe.png)
+![End of Game Page](assets/images/End-page-wireframe.png)
+![Leaderboard Page](assets/images/Leaderboard-page-wireframe.png)
+&nbsp;
+
 ### Website design elements
 #### Colors
 #### Fonts
