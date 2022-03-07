@@ -157,11 +157,14 @@ Returning visitors can enjoy a different set of questions when they play the gam
 &nbsp;
 
 ### Bugs
-Links from index.html files not recognised when deployed to GitHub. I had to remove the / for the root folder for the pages to link correctly in-between themselves.
-
+* Links from index.html files not recognised when deployed to GitHub. I had to remove the / for the root folder for the pages to link correctly in-between themselves.
+&nbsp;
 
 #### From the Slack feedback request
+&nbsp;
+
 ### Unfixed Bugs
+* When deployed on GitHub, at the end page, when the user saves the username with their score GitHub returns a 404 error for the JavaScript file linked to it. This issue does not occur locally.
 &nbsp;
 
 [Back to Table of contents](#table-of-contents)
