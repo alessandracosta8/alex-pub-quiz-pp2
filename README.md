@@ -126,7 +126,8 @@ The local storage is not secured and will rely on the honesty of the user playin
 ### HTML and CSS
 The code of every page and the stylesheet has been tested with:
 - W3C Markup Validation Service 
-- W3C CSS Validation Service. 
+- W3C CSS Validation Service
+- JavaScript validated with JSHint
 
 The errors found have been corrected. Some warning are still present for the Empty tags that will be filled by JavaScript when the content is loaded.
 &nbsp;  

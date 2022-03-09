@@ -16,7 +16,7 @@ finalScore.innerText = mostRecentScore;
 // Enable save button only if username is typed in or it has any whitespace
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value || username.value.indexOf(' ') >= 0;
-})
+});
 
 /* Function to save the score 
 -> prevent the for to default to refresh 
@@ -39,4 +39,4 @@ saveHighScore = e => {
     highScores.splice(MAX_HIGH_SCORES);
     localStorage.setItem("highScores", JSON.stringify(highScores));
     window.location.assign("index.html");
-}
+};

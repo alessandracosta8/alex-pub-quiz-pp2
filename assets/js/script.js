@@ -72,7 +72,7 @@ startGame = () => {
     getNewQuestion();
     game.classList.remove("hidden");
     loader.classList.add("hidden");
-}
+};
 
 /* Show a new question on the page and update HUD
 -> If game ran out of questions, or reached max, goes to end page
@@ -97,12 +97,12 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         const number = choice.dataset["number"];
         choice.innerText = decodeHTML(currentQuestion["choice" + number]);
-    })
+    });
 
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
-}
+};
 
 /* Listen to user click on choice and give color feedback
 -> Don't do anything on click event if game is not ready to accept answers
@@ -128,11 +128,11 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
-    })
+    });
 });
 
 // Increment score 
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
-}
+};
