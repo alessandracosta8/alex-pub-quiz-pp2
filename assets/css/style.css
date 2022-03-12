@@ -86,7 +86,7 @@ h3 {
     display: none;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
     h2 {
         font-size: 2.5rem;
     }
