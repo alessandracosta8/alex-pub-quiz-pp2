@@ -162,9 +162,6 @@ Returning visitors can enjoy a different set of questions when they play the gam
 * When deployed on GitHub, at the end page, when the user saves the username with their score GitHub returns a 404 error for the JavaScript file linked to it. This issue does not occur locally. It was resolved in the end.js file where the function called by the Save button would redirect to the root, instead of the index.html page.
 &nbsp;
 
-#### From the Slack feedback request
-&nbsp;
-
 ### Unfixed Bugs
 None found at the moment.
 &nbsp;
