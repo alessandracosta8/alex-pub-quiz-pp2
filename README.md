@@ -163,7 +163,7 @@ Returning visitors can enjoy a different set of questions when they play the gam
 &nbsp;
 
 ### Unfixed Bugs
-None found at the moment.
+None found at the moment. 
 &nbsp;
 
 [Back to Table of contents](#table-of-contents)
